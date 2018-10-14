@@ -29,8 +29,6 @@ export class HomeComponent implements OnInit, OnDestroy, AfterViewInit, AfterVie
     lat = 51.678418;
     lng = 7.809007;
 
-    frame: any;
-
     animation = {
         aboutUs: false,
         rentLectory: false,
@@ -88,6 +86,7 @@ export class HomeComponent implements OnInit, OnDestroy, AfterViewInit, AfterVie
     }
 
     public setAnimationOnScroll(section) {
+        console.log(section);
         this.animation[section] = true;
     }
 
