@@ -86,7 +86,6 @@ export class HomeComponent implements OnInit, OnDestroy, AfterViewInit, AfterVie
     }
 
     public setAnimationOnScroll(section) {
-        console.log(section);
         this.animation[section] = true;
     }
 
